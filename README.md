@@ -143,11 +143,11 @@ SELECT ROUND(avg(age),2) as avg_sale
 FROM sales  
 WHERE category = 'Beauty';  
 
-#### Q.5  
+#### Q.5 Write a SQL query to find all transactions where the total_sale is greater than 1000.
 SELECT * FROM sales  
 WHERE total_sale >1000;  
 
-#### Q.6  
+#### Q.6 Write a SQL query to find the total number of transactions (transaction_id) made by each gender in each category.
 SELECT category,  
 gender,   
 COUNT(transaction_id) AS Total_trans   
@@ -155,7 +155,7 @@ FROM sales
 GROUP BY 1,2  
 ORDER BY 1;  
 
-#### Q.7  
+#### Q.7 Write a SQL query to calculate the average sale for each month.Find out best selling month in each year ? 
 SELECT   
 Year,   
 Month,  
@@ -172,7 +172,7 @@ GROUP BY 1,2
 ) AS T1  
 WHERE RANK = 1;    
 
-#### Q.8  
+#### Q.8 Write a SQL query to find the top 5 customers based on the highest total sales ?
 SELECT customer_id,   
 SUM(total_sale) AS total_sales   
 FROM sales  
@@ -180,7 +180,7 @@ GROUP BY 1
 ORDER BY 2 DESC  
 LIMIT 5;  
 
-#### Q.9  
+#### Q.9 Write a SQL query to find the number of unique customers who purchased items from each category ? 
 SELECT   
 category,   
 count(distinct customer_id) AS Customers   
