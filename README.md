@@ -138,7 +138,7 @@ COUNT(category) AS Total_order
 FROM sales  
 GROUP BY 1;  
 
-#### Q.4  
+#### Q.4  Write a SQL query to find the average age of customers who purchased items from the 'Beauty' category.
 SELECT ROUND(avg(age),2) as avg_sale   
 FROM sales  
 WHERE category = 'Beauty';  
