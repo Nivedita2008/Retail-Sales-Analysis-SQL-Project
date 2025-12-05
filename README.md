@@ -74,7 +74,7 @@ OR
 OR  
  total_sale is Null;  
  
-#### DELETE DUPLICATES
+### DELETE DUPLICATES
 
 DELETE FROM sales   
 WHERE  
