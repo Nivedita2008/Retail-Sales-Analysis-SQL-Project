@@ -73,6 +73,8 @@ OR
  cogs is Null  
 OR  
  total_sale is Null;  
+ 
+##### DELETE DUPLICATES
 
 DELETE FROM sales   
 WHERE  
